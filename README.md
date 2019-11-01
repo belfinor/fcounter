@@ -24,7 +24,7 @@ func main() {
 
   // 0 if no file or last value
   // val = val % 100000000
-  cnt := New("counter.txt", 100000000)
+  cnt := fcounter.New("counter.txt", 100000000)
 
   cnt.Set(0)
 
