@@ -1,6 +1,6 @@
 # fcounter
 
-Work with counter in a text file
+Simple incremental counter that stores the value in a text file
 
 # Install
 
@@ -35,6 +35,7 @@ func main() {
     fmt.Println( cnt.Inc() ) // i + 1
   }
 
-  cnt.SetDate(time.Now()) // val = YYYYMMDD
+  // val = YYYYMMDD % 100000000
+  cnt.SetDate(time.Now())
 }
 ```
